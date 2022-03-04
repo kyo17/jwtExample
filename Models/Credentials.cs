@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace jwt.Models
+{
+    public class Credentials
+    {
+        public string nickName { get; set; }
+        [EmailAddress]
+        [Required]
+        public string email { get; set; }
+        [Required]
+        public string password { get; set; }
+    }
+}
